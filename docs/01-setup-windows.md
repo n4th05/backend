@@ -300,18 +300,18 @@ public class Teste {
 
 Marque o que você completou:
 
-- [ ] VS Code instalado e abrindo corretamente
-- [ ] Extension Pack for Java instalado
-- [ ] Spring Boot Extension Pack instalado
-- [ ] REST Client instalado
-- [ ] GitLens instalado
-- [ ] Docker extensão instalado
-- [ ] Error Lens instalado
-- [ ] Material Icon Theme instalado (opcional)
-- [ ] Auto Save configurado
-- [ ] Format On Save configurado
-- [ ] Terminal integrado abrindo corretamente
-- [ ] `code --version` funcionando no terminal
+- [✅] VS Code instalado e abrindo corretamente
+- [✅] Extension Pack for Java instalado
+- [✅] Spring Boot Extension Pack instalado
+- [✅] REST Client instalado
+- [✅] GitLens instalado
+- [✅] Docker extensão instalado
+- [✅] Error Lens instalado
+- [✅] Material Icon Theme instalado (opcional)
+- [✅] Auto Save configurado
+- [✅] Format On Save configurado
+- [✅] Terminal integrado abrindo corretamente
+- [✅] `code --version` funcionando no terminal
 
 ---
 
