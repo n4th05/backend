@@ -438,13 +438,13 @@ Funcionando perfeitamente! 🚀
 
 Marque o que você completou:
 
-- [ ] Git Bash ou WSL instalado e funcionando
-- [ ] SDKMAN instalado (`sdk version` funciona)
-- [ ] Java 25 instalado (`java -version` mostra versão 25)
-- [ ] Compilador Java funcionando (`javac -version`)
-- [ ] VS Code reconhecendo o Java
-- [ ] Programa de teste compilando e executando
-- [ ] JAVA_HOME configurado (`echo $JAVA_HOME` mostra caminho)
+- [✅] Git Bash ou WSL instalado e funcionando
+- [✅] SDKMAN instalado (`sdk version` funciona)
+- [✅] Java 25 instalado (`java -version` mostra versão 25)
+- [✅] Compilador Java funcionando (`javac -version`)
+- [✅] VS Code reconhecendo o Java
+- [✅] Programa de teste compilando e executando
+- [✅] JAVA_HOME configurado (`echo $JAVA_HOME` mostra caminho)
 
 ---
 
