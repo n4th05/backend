@@ -540,17 +540,17 @@ git push -u origin main
 
 Marque o que você aprendeu:
 
-- [ ] Instalei e configurei Git (`git config`)
-- [ ] Entendi os conceitos: repositório, commit, staging area
-- [ ] Sei inicializar repositório (`git init`)
-- [ ] Sei adicionar arquivos (`git add`)
-- [ ] Sei fazer commit (`git commit`)
-- [ ] Sei ver status (`git status`)
-- [ ] Sei ver histórico (`git log`)
-- [ ] Sei desfazer mudanças (`git restore`)
-- [ ] Criei conta no GitHub
-- [ ] Conectei repositório local com GitHub (`git remote add`)
-- [ ] Enviei código para GitHub (`git push`)
+- [✅] Instalei e configurei Git (`git config`)
+- [✅] Entendi os conceitos: repositório, commit, staging area
+- [✅] Sei inicializar repositório (`git init`)
+- [✅] Sei adicionar arquivos (`git add`)
+- [✅] Sei fazer commit (`git commit`)
+- [✅] Sei ver status (`git status`)
+- [✅] Sei ver histórico (`git log`)
+- [✅] Sei desfazer mudanças (`git restore`)
+- [✅] Criei conta no GitHub
+- [✅] Conectei repositório local com GitHub (`git remote add`)
+- [✅] Enviei código para GitHub (`git push`)
 
 ---
 
