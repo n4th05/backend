@@ -793,19 +793,19 @@ git config --global pager.branch false
 
 Marque o que você está seguindo:
 
-- [ ] Uso Conventional Commits em todos os commits
-- [ ] Crio uma branch para cada feature/fix
-- [ ] Nomenclatura de branches segue padrão: `tipo/descricao`
-- [ ] Faço commits pequenos e focados
-- [ ] Mensagens de commit são claras e descritivas
-- [ ] Nunca commito código quebrado
-- [ ] Sempre testo antes de commitar
-- [ ] Faço Pull Requests ao invés de merge direto
-- [ ] Reviso meu próprio código antes de abrir PR
-- [ ] Mantenho branch atualizada com develop
-- [ ] Não commito arquivos sensíveis (senhas, tokens)
-- [ ] Resolvo conflitos com cuidado
-- [ ] Deleto branches após merge
+- [✅] Uso Conventional Commits em todos os commits
+- [✅] Crio uma branch para cada feature/fix
+- [✅] Nomenclatura de branches segue padrão: `tipo/descricao`
+- [✅] Faço commits pequenos e focados
+- [✅] Mensagens de commit são claras e descritivas
+- [✅] Nunca commito código quebrado
+- [✅] Sempre testo antes de commitar
+- [✅] Faço Pull Requests ao invés de merge direto
+- [✅] Reviso meu próprio código antes de abrir PR
+- [✅] Mantenho branch atualizada com develop
+- [✅] Não commito arquivos sensíveis (senhas, tokens)
+- [✅] Resolvo conflitos com cuidado
+- [✅] Deleto branches após merge
 
 ---
 
