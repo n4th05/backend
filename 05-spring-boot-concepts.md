@@ -769,14 +769,14 @@ Mostra TODAS as dependências transitivas!
 
 ## ✅ Checklist de Compreensão
 
-- [ ] Entendi diferença entre Spring e Spring Boot
-- [ ] Sei o que é IoC (Inversion of Control)
-- [ ] Sei o que é DI (Dependency Injection)
-- [ ] Conheço as annotations principais (@Service, @Repository, @RestController)
-- [ ] Entendi a arquitetura em camadas (Controller → Service → Repository)
-- [ ] Sei o que é Auto-Configuration
-- [ ] Entendi o papel dos Starters
-- [ ] Sei quando usar cada tipo de injection
+- [✅] Entendi diferença entre Spring e Spring Boot
+- [✅] Sei o que é IoC (Inversion of Control)
+- [✅] Sei o que é DI (Dependency Injection)
+- [✅] Conheço as annotations principais (@Service, @Repository, @RestController)
+- [✅] Entendi a arquitetura em camadas (Controller → Service → Repository)
+- [✅] Sei o que é Auto-Configuration
+- [✅] Entendi o papel dos Starters
+- [✅] Sei quando usar cada tipo de injection
 
 ---
 
