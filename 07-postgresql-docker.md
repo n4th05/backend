@@ -478,15 +478,15 @@ SELECT * FROM products;
 
 ## ✅ Checklist de Verificação
 
-- [ ] Docker Desktop instalado e rodando
-- [ ] `docker --version` funciona
-- [ ] `docker-compose.yml` criado
-- [ ] Containers iniciados (`docker-compose up -d`)
-- [ ] PostgreSQL acessível na porta 5432
-- [ ] pgAdmin acessível em http://localhost:5050
-- [ ] Servidor configurado no pgAdmin
-- [ ] Spring Boot conecta ao PostgreSQL
-- [ ] Tabelas sendo criadas automaticamente
+- [✅] Docker Desktop instalado e rodando
+- [✅] `docker --version` funciona
+- [✅] `docker-compose.yml` criado
+- [✅] Containers iniciados (`docker-compose up -d`)
+- [✅] PostgreSQL acessível na porta 5432
+- [✅] pgAdmin acessível em http://localhost:5050
+- [✅] Servidor configurado no pgAdmin
+- [✅] Spring Boot conecta ao PostgreSQL
+- [✅] Tabelas sendo criadas automaticamente
 
 ---
 
