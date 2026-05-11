@@ -557,15 +557,15 @@ git commit -m "chore: initial Spring Boot project setup"
 
 Antes de prosseguir para a Fase 1, confirme:
 
-- [ ] Projeto criado no Spring Initializr com configurações corretas
-- [ ] Projeto extraído e aberto no VS Code
-- [ ] Docker Compose rodando PostgreSQL e pgAdmin
-- [ ] `application.properties` configurado corretamente
-- [ ] Aplicação inicia sem erros
-- [ ] Endpoint `/api/hello` responde corretamente
-- [ ] Estrutura de pacotes criada
-- [ ] Git inicializado com commit inicial
-- [ ] VS Code reconhece o projeto Maven (ícone M nos arquivos Java)
+- [✅] Projeto criado no Spring Initializr com configurações corretas
+- [✅] Projeto extraído e aberto no VS Code
+- [✅] Docker Compose rodando PostgreSQL e pgAdmin
+- [✅] `application.properties` configurado corretamente
+- [✅] Aplicação inicia sem erros
+- [✅] Endpoint `/api/hello` responde corretamente
+- [✅] Estrutura de pacotes criada
+- [✅] Git inicializado com commit inicial
+- [✅] VS Code reconhece o projeto Maven (ícone M nos arquivos Java)
 
 ---
 
