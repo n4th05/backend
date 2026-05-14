@@ -1,5 +1,6 @@
 package com.momo.ecommerce.model;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,7 +43,7 @@ public class Product {
     @NotBlank(message = "Preço é obrigatório.")
     @Positive(message = "Preço deve ser maior que zero.")
     @Column(nullable = false, precision = 10, scale = 2)
-    private Double price;
+    private BigDecimal price;
 
     @NotNull(message = "Quantidade em estoque é obrigadatória.")
     @Min(value = 0, message = "Quantidade não pode ser negativa.")
