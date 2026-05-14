@@ -4,56 +4,56 @@ Use este checklist para validar que você completou todos os passos da Fase 1 co
 
 ## 🎯 Objetivos da Fase 1
 
-- [ ] Entender arquitetura em camadas (Controller → Service → Repository)
-- [ ] Criar primeiro CRUD completo
-- [ ] Aprender conceitos de REST API
-- [ ] Praticar JPA e validações
-- [ ] Implementar tratamento de erros básico
+- [✅] Entender arquitetura em camadas (Controller → Service → Repository)
+- [✅] Criar primeiro CRUD completo
+- [✅] Aprender conceitos de REST API
+- [✅] Praticar JPA e validações
+- [✅] Implementar tratamento de erros básico
 
 ---
 
 ## 📦 1. Configuração Inicial do Projeto
 
 ### 1.1 Spring Initializr
-- [ ] Projeto criado no [Spring Initializr](https://start.spring.io/)
-- [ ] Grupo: `com.momo.ecommerce`
-- [ ] Artefato: `momo-ecommerce`
-- [ ] Nome: `MoMo E-commerce`
-- [ ] Packaging: `Jar`
-- [ ] Java: `25`
-- [ ] Spring Boot: `4.0.3`
+- [✅] Projeto criado no [Spring Initializr](https://start.spring.io/)
+- [✅] Grupo: `com.momo.ecommerce`
+- [✅] Artefato: `momo-ecommerce`
+- [✅] Nome: `MoMo E-commerce`
+- [✅] Packaging: `Jar`
+- [✅] Java: `25`
+- [✅] Spring Boot: `4.0.3`
 
 ### 1.2 Dependências Adicionadas
-- [ ] Spring Web
-- [ ] Spring Data JPA
-- [ ] PostgreSQL Driver
-- [ ] Lombok
-- [ ] Validation
-- [ ] Spring Boot DevTools
+- [✅] Spring Web
+- [✅] Spring Data JPA
+- [✅] PostgreSQL Driver
+- [✅] Lombok
+- [✅] Validation
+- [✅] Spring Boot DevTools
 
 ### 1.3 Projeto Importado
-- [ ] Projeto descompactado
-- [ ] Aberto no VS Code
-- [ ] Maven dependencies baixadas automaticamente
-- [ ] Sem erros de compilação
+- [✅] Projeto descompactado
+- [✅] Aberto no VS Code
+- [✅] Maven dependencies baixadas automaticamente
+- [✅] Sem erros de compilação
 
 ---
 
 ## ⚙️ 2. Configuração do Banco de Dados
 
 ### 2.1 Docker Compose
-- [ ] `docker-compose.yml` copiado para raiz do projeto
-- [ ] Executado `docker-compose up -d`
-- [ ] PostgreSQL rodando (porta 5432)
-- [ ] pgAdmin acessível em http://localhost:5050
+- [✅] `docker-compose.yml` copiado para raiz do projeto
+- [✅] Executado `docker-compose up -d`
+- [✅] PostgreSQL rodando (porta 5432)
+- [✅] pgAdmin acessível em http://localhost:5050
 
 ### 2.2 application.properties
-- [ ] Arquivo criado em `src/main/resources/application.properties`
-- [ ] URL do banco configurada: `jdbc:postgresql://localhost:5432/momo_ecommerce`
-- [ ] Username: `momo_user`
-- [ ] Password: `momo_pass`
-- [ ] Hibernate ddl-auto: `update` (para desenvolvimento)
-- [ ] Show-sql: `true` (para aprendizado)
+- [✅] Arquivo criado em `src/main/resources/application.properties`
+- [✅] URL do banco configurada: `jdbc:postgresql://localhost:5432/momo_ecommerce`
+- [✅] Username: `momo_user`
+- [✅] Password: `momo_pass`
+- [✅] Hibernate ddl-auto: `update` (para desenvolvimento)
+- [✅] Show-sql: `true` (para aprendizado)
 
 **Conteúdo mínimo:**
 ```properties
@@ -76,8 +76,8 @@ server.port=8080
 ```
 
 ### 2.3 Conexão Validada
-- [ ] Aplicação inicia sem erros
-- [ ] Logs mostram conexão com banco estabelecida
+- [✅] Aplicação inicia sem erros
+- [✅] Logs mostram conexão com banco estabelecida
 
 ---
 
@@ -97,8 +97,8 @@ src/main/java/com/momo/ecommerce/
 └── exception/
 ```
 
-- [ ] Todos os pacotes criados
-- [ ] Estrutura organizada e fácil de navegar
+- [✅] Todos os pacotes criados
+- [✅] Estrutura organizada e fácil de navegar
 
 ---
 
@@ -107,26 +107,26 @@ src/main/java/com/momo/ecommerce/
 ### 4.1 Classe Product Criada
 **Caminho:** `src/main/java/com/momo/ecommerce/model/Product.java`
 
-- [ ] Anotação `@Entity` presente
-- [ ] Anotação `@Table(name = "products")` presente
-- [ ] Anotações Lombok: `@Getter`, `@Setter`, `@NoArgsConstructor`, `@AllArgsConstructor`, `@Builder`
+- [✅] Anotação `@Entity` presente
+- [✅] Anotação `@Table(name = "products")` presente
+- [✅] Anotações Lombok: `@Getter`, `@Setter`, `@NoArgsConstructor`, `@AllArgsConstructor`, `@Builder`
 
 ### 4.2 Campos da Entidade
-- [ ] `id` - Long, `@Id`, `@GeneratedValue(strategy = GenerationType.IDENTITY)`
-- [ ] `name` - String, `@NotBlank`, `@Size(min = 3, max = 100)`
-- [ ] `description` - String, `@Size(max = 500)`
-- [ ] `price` - BigDecimal, `@NotNull`, `@Positive`
-- [ ] `stock` - Integer, `@NotNull`, `@PositiveOrZero`
-- [ ] `createdAt` - LocalDateTime, `@Column(nullable = false, updatable = false)`
-- [ ] `updatedAt` - LocalDateTime
+- [✅] `id` - Long, `@Id`, `@GeneratedValue(strategy = GenerationType.IDENTITY)`
+- [✅] `name` - String, `@NotBlank`, `@Size(min = 3, max = 100)`
+- [✅] `description` - String, `@Size(max = 500)`
+- [✅] `price` - BigDecimal, `@NotNull`, `@Positive`
+- [✅] `stock` - Integer, `@NotNull`, `@PositiveOrZero`
+- [✅] `createdAt` - LocalDateTime, `@Column(nullable = false, updatable = false)`
+- [✅] `updatedAt` - LocalDateTime
 
 ### 4.3 Lifecycle Callbacks
-- [ ] Método `@PrePersist` setando `createdAt` e `updatedAt`
-- [ ] Método `@PreUpdate` setando `updatedAt`
+- [✅] Método `@PrePersist` setando `createdAt` e `updatedAt`
+- [✅] Método `@PreUpdate` setando `updatedAt`
 
 ### 4.4 Validação
-- [ ] Aplicação inicia e cria tabela `products` no banco
-- [ ] Tabela tem todos os campos esperados (verificar no pgAdmin)
+- [✅] Aplicação inicia e cria tabela `products` no banco
+- [✅] Tabela tem todos os campos esperados (verificar no pgAdmin)
 
 ---
 
@@ -151,12 +151,12 @@ src/main/java/com/momo/ecommerce/
 ### 6.1 ProductRepository
 **Caminho:** `src/main/java/com/momo/ecommerce/repository/ProductRepository.java`
 
-- [ ] Interface criada
-- [ ] Extende `JpaRepository<Product, Long>`
-- [ ] Anotação `@Repository` presente
+- [✅] Interface criada
+- [✅] Extende `JpaRepository<Product, Long>`
+- [✅] Anotação `@Repository` presente
 
 ### 6.2 Query Methods Customizados (Opcional para Fase 1)
-- [ ] `List<Product> findByNameContainingIgnoreCase(String name);`
+- [✅] `List<Product> findByNameContainingIgnoreCase(String name);`
 - [ ] `List<Product> findByPriceBetween(BigDecimal min, BigDecimal max);`
 
 ---
@@ -166,10 +166,10 @@ src/main/java/com/momo/ecommerce/
 ### 7.1 ProductService
 **Caminho:** `src/main/java/com/momo/ecommerce/service/ProductService.java`
 
-- [ ] Classe criada com `@Service`
-- [ ] `ProductRepository` injetado via construtor
-- [ ] Anotação `@RequiredArgsConstructor` do Lombok (ou construtor manual)
-- [ ] Logging configurado: `@Slf4j`
+- [✅] Classe criada com `@Service`
+- [✅] `ProductRepository` injetado via construtor
+- [✅] Anotação `@RequiredArgsConstructor` do Lombok (ou construtor manual)
+- [✅] Logging configurado: `@Slf4j`
 
 ### 7.2 Métodos Implementados
 
@@ -223,10 +223,10 @@ public void delete(Long id)
 ### 8.1 ProductController
 **Caminho:** `src/main/java/com/momo/ecommerce/controller/ProductController.java`
 
-- [ ] Classe criada com `@RestController`
-- [ ] `@RequestMapping("/api/products")`
-- [ ] `ProductService` injetado
-- [ ] Logging configurado
+- [✅] Classe criada com `@RestController`
+- [✅] `@RequestMapping("/api/products")`
+- [✅] `ProductService` injetado
+- [✅] Logging configurado
 
 ### 8.2 Endpoints Implementados
 
@@ -235,8 +235,8 @@ public void delete(Long id)
 @PostMapping
 public ResponseEntity<ProductResponseDTO> create(@Valid @RequestBody ProductRequestDTO request)
 ```
-- [ ] Anotação `@PostMapping` presente
-- [ ] `@Valid` aplicado no request
+- [✅] Anotação `@PostMapping` presente
+- [✅] `@Valid` aplicado no request
 - [ ] Retorna `ResponseEntity` com status `201 CREATED`
 - [ ] Location header configurado (opcional)
 
@@ -253,7 +253,7 @@ public ResponseEntity<List<ProductResponseDTO>> getAll()
 @GetMapping("/{id}")
 public ResponseEntity<ProductResponseDTO> getById(@PathVariable Long id)
 ```
-- [ ] `@PathVariable` usado corretamente
+- [✅] `@PathVariable` usado corretamente
 - [ ] Retorna produto específico
 - [ ] Status `200 OK`
 
@@ -282,8 +282,8 @@ public ResponseEntity<Void> delete(@PathVariable Long id)
 ### 9.1 ResourceNotFoundException
 **Caminho:** `src/main/java/com/momo/ecommerce/exception/ResourceNotFoundException.java`
 
-- [ ] Classe criada estendendo `RuntimeException`
-- [ ] Construtor aceita mensagem
+- [✅] Classe criada estendendo `RuntimeException`
+- [✅] Construtor aceita mensagem
 
 ### 9.2 GlobalExceptionHandler
 **Caminho:** `src/main/java/com/momo/ecommerce/exception/GlobalExceptionHandler.java`

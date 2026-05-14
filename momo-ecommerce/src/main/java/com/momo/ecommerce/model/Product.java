@@ -40,7 +40,7 @@ public class Product {
     @Column(length = 500)
     private String description;
 
-    @NotBlank(message = "Preço é obrigatório.")
+    @NotNull(message = "Preço é obrigatório.")
     @Positive(message = "Preço deve ser maior que zero.")
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal price;
