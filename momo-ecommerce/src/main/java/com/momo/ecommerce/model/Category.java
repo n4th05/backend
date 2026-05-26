@@ -40,7 +40,7 @@ public class Category {
     @NotBlank(message = "Nome é obrigatório.")
     private String name;
 
-    @Column(nullable = false, unique = true, length = 500)
+    @Column(nullable = false, length = 500)
     @Size(min = 10, max = 500, message = "Descrição deve ter entre 10 ou 500 caracteres.")
     @NotBlank(message = "Descrição é obrigatório.")
     private String description;
