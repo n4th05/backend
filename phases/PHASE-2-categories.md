@@ -491,16 +491,16 @@ public class CategoryController {
 
 ## ✅ Checklist de Implementação
 
-- [ ] Entidade `Category` criada com relacionamento OneToMany
-- [ ] Entidade `Product` atualizada com relacionamento ManyToOne
-- [ ] `CategoryRepository` criado com queries customizadas
-- [ ] `CategoryService` implementado com validações de negócio
-- [ ] DTOs criados para evitar loops de serialização
-- [ ] `CategoryController` implementado
-- [ ] Testar todos os endpoints no Swagger/Postman
+- [✅] Entidade `Category` criada com relacionamento OneToMany
+- [✅] Entidade `Product` atualizada com relacionamento ManyToOne
+- [✅] `CategoryRepository` criado com queries customizadas
+- [✅] `CategoryService` implementado com validações de negócio
+- [✅] DTOs criados para evitar loops de serialização
+- [✅] `CategoryController` implementado
+- [✅] Testar todos os endpoints no Swagger/Postman
 - [ ] Criar testes unitários de `CategoryService`
 - [ ] Criar testes de integração dos endpoints
-- [ ] Commits seguindo Conventional Commits
+- [✅] Commits seguindo Conventional Commits
 - [ ] Pull Request aberto e aprovado
 
 ---
