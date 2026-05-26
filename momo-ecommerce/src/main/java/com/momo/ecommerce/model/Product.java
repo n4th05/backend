@@ -53,7 +53,7 @@ public class Product {
     @NotNull(message = "Quantidade em estoque é obrigadatória.")
     @Min(value = 0, message = "Quantidade não pode ser negativa.")
     @Column(nullable = false)
-    private Integer StockQuantity;
+    private Integer stockQuantity;
 
     @Column(nullable = false)
     @Builder.Default
