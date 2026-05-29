@@ -98,7 +98,7 @@ public class Order {
         updatedAt = LocalDateTime.now();
     }
 
-    enum OrderStatus {
+    public enum OrderStatus {
         PENDING, CONFIRMED, PROCESSING, SHIPPED, DELIVERED, CANCELLED
     }
 }
