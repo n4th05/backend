@@ -17,8 +17,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProductDTO {
     
-    private Long id;
-
     @NotBlank(message = "Nome é obrigatório")
     @Size(min = 3, max = 100)
     private String name;
