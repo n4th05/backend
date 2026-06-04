@@ -59,7 +59,7 @@ public class Order {
     private BigDecimal totalAmount = BigDecimal.ZERO;
 
     @Column(length = 500)
-    private String notes;
+    private String observation;
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;

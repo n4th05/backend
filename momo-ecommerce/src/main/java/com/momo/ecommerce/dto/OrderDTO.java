@@ -24,6 +24,6 @@ public class OrderDTO {
     private List<OrderItemDTO> items;
 
     @Size(max = 500, message = "Observação deve ter no máximo 500 caracteres.")
-    private String notes;
+    private String observation;
     
 }
