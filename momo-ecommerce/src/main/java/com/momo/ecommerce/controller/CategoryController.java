@@ -87,6 +87,7 @@ public class CategoryController {
 
     private CategoryDTO convertToDTO(Category category) {
         return CategoryDTO.builder()
+                .id(category.getId())
                 .name(category.getName())
                 .description(category.getDescription())
                 .active(category.getActive())
@@ -96,6 +97,7 @@ public class CategoryController {
 
     private ProductDTO convertProductToDTO(Product product) {
         return ProductDTO.builder()
+                .id(product.getId())
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())
