@@ -49,6 +49,7 @@ public class CategoryController {
         Category category = categoryService.findByIdWithProducts(id);
 
         List<ProductResponseDTO> products = category.getProducts().stream()
+
                 .map(this::convertProductToDTO)
                 .collect(Collectors.toList());
 
@@ -57,6 +58,7 @@ public class CategoryController {
 
     @PostMapping
     public ResponseEntity<CategoryResponseDTO> createCategory(@Valid @RequestBody CategoryResponseDTO dto) {
+      
         Category category = convertToEntity(dto);
         Category created = categoryService.create(category);
 
