@@ -23,11 +23,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "products")
 @Getter
 @Setter
+@ToString(exclude = "category")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

@@ -2,10 +2,10 @@ package com.momo.ecommerce.repository;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 import com.momo.ecommerce.model.Product;
 
-@Repository
+@Component
 public interface ProductRepository extends JpaRepository<Product, Long>{
     
     List<Product> findByNameContainingIgnoreCase(String name);
