@@ -110,7 +110,6 @@ public class CategoryController {
 
     private Category convertToEntity(CategoryDTO dto) {
         return Category.builder()
-                .id(dto.getId())
                 .name(dto.getName())
                 .description(dto.getDescription())
                 .active(dto.getActive())
