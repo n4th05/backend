@@ -1,7 +1,5 @@
-package com.momo.ecommerce.dto;
+package com.momo.ecommerce.dto.ResponseDTO;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,15 +9,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CategoryDTO {
+public class CategoryResponseDTO {
 
     private Long id;
     
-    @NotBlank(message = "Nome é obrigatório")
-    @Size(min = 3, max = 50)
     private String name;
 
-    @Size(max = 200)
     private String description;
 
     private Boolean active;

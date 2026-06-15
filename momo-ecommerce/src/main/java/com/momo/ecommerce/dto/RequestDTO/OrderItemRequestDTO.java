@@ -1,4 +1,4 @@
-package com.momo.ecommerce.dto;
+package com.momo.ecommerce.dto.RequestDTO;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -11,8 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
-public class OrderItemDTO {
+public class OrderItemRequestDTO {
 
     @NotNull(message = "Produto é obrigatório.")
     private Long productId;

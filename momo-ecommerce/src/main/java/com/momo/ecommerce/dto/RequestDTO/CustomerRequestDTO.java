@@ -1,4 +1,4 @@
-package com.momo.ecommerce.dto;
+package com.momo.ecommerce.dto.RequestDTO;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CustomerDTO {
+public class CustomerRequestDTO {
 
     @NotBlank(message = "Nome é obrigatório.")
     @Size(min = 3, max = 100, message = "Nome deve ter entre 3 e 100 caracteres.")

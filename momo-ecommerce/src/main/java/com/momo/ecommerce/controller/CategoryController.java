@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.momo.ecommerce.dto.CategoryDTO;
-import com.momo.ecommerce.dto.ProductDTO;
+import com.momo.ecommerce.dto.ResponseDTO.CategoryResponseDTO;
+import com.momo.ecommerce.dto.ResponseDTO.ProductResponseDTO;
 import com.momo.ecommerce.model.Category;
 import com.momo.ecommerce.model.Product;
 import com.momo.ecommerce.service.CategoryService;
@@ -28,10 +28,10 @@ public class CategoryController {
     private final CategoryService categoryService;
 
     @GetMapping
-    public ResponseEntity<List<CategoryDTO>> listCategories() {
+    public ResponseEntity<List<CategoryResponseDTO>> listCategories() {
         List<Category> categories = categoryService.findAll();
 
-        List<CategoryDTO> dtos = categories.stream()
+        List<CategoryResponseDTO> dtos = categories.stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
 
@@ -39,16 +39,16 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CategoryDTO> getCategory(@PathVariable Long id) {
+    public ResponseEntity<CategoryResponseDTO> getCategory(@PathVariable Long id) {
         Category category = categoryService.findById(id);
         return ResponseEntity.ok(convertToDTO(category));
     }
 
     @GetMapping("/{id}/products")
-    public ResponseEntity<List<ProductDTO>> getProductsCategory(@PathVariable Long id) {
+    public ResponseEntity<List<ProductResponseDTO>> getProductsCategory(@PathVariable Long id) {
         Category category = categoryService.findByIdWithProducts(id);
 
-        List<ProductDTO> products = category.getProducts().stream()
+        List<ProductResponseDTO> products = category.getProducts().stream()
                 .map(this::convertProductToDTO)
                 .collect(Collectors.toList());
 
@@ -56,7 +56,7 @@ public class CategoryController {
     }
 
     @PostMapping
-    public ResponseEntity<CategoryDTO> createCategory(@Valid @RequestBody CategoryDTO dto) {
+    public ResponseEntity<CategoryResponseDTO> createCategory(@Valid @RequestBody CategoryResponseDTO dto) {
         Category category = convertToEntity(dto);
         Category created = categoryService.create(category);
 
@@ -65,9 +65,9 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CategoryDTO> updateCategory(
+    public ResponseEntity<CategoryResponseDTO> updateCategory(
         @PathVariable Long id,
-        @Valid @RequestBody CategoryDTO dto) {
+        @Valid @RequestBody CategoryResponseDTO dto) {
 
             Category category = convertToEntity(dto);
             Category updated = categoryService.update(id, category);
@@ -85,8 +85,8 @@ public class CategoryController {
 
     // Métodos auxiliares de conversão
 
-    private CategoryDTO convertToDTO(Category category) {
-        return CategoryDTO.builder()
+    private CategoryResponseDTO convertToDTO(Category category) {
+        return CategoryResponseDTO.builder()
                 .id(category.getId())
                 .name(category.getName())
                 .description(category.getDescription())
@@ -95,20 +95,22 @@ public class CategoryController {
                 .build();
     }
 
-    private ProductDTO convertProductToDTO(Product product) {
-        return ProductDTO.builder()
+    private ProductResponseDTO convertProductToDTO(Product product) {
+        return ProductResponseDTO.builder()
                 .id(product.getId())
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())
-                .StockQuantity(product.getStockQuantity())
+                .stockQuantity(product.getStockQuantity())
                 .active(product.getActive())
                 .categoryId(product.getCategory() != null ? product.getCategory().getId() : null)
                 .categoryName(product.getCategory() != null ? product.getCategory().getName() : null)
+                .createdAt(product.getCreatedAt())
+                .updatedAt(product.getUpdatedAt())
                 .build();
     }
 
-    private Category convertToEntity(CategoryDTO dto) {
+    private Category convertToEntity(CategoryResponseDTO dto) {
         return Category.builder()
                 .name(dto.getName())
                 .description(dto.getDescription())
