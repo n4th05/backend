@@ -1,12 +1,15 @@
 package com.momo.ecommerce.repository;
 
+import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 import com.momo.ecommerce.model.Customer;
 
-@Repository
+@Component
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
+
+    List<Customer> findByNameContainingIgnoreCase(String name);
     
     Optional<Customer> findByEmail(String email);
 
@@ -15,4 +18,8 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     boolean existsByEmail(String email);
 
     boolean existsByCpf(String cpf);
+
+    boolean existsByCpfAndIdNot(String cpf, Long id);
+
+    boolean existsByEmailAndIdNot(String email, Long id);
 }

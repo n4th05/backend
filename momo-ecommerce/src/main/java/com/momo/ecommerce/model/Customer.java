@@ -3,6 +3,7 @@ package com.momo.ecommerce.model;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.validator.constraints.br.CPF;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -57,6 +58,7 @@ public class Customer {
     @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}",
             message = "CPF deve estar no formato XXX.XXX.XXX-XX")
     @Column(nullable = false, unique = true, length = 14)
+    @CPF(message = "CPF Inválido.")
     private String cpf;
 
     @Size(max = 200)

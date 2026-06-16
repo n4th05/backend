@@ -1,5 +1,6 @@
 package com.momo.ecommerce.dto.RequestDTO;
 
+import org.hibernate.validator.constraints.br.CPF;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -29,6 +30,7 @@ public class CustomerRequestDTO {
     private String phone;
 
     @NotBlank(message = "CPF é obrigatório.")
+    @CPF(message = "CPF Inválido.")
     @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}",
             message = "CPF deve estar no formato XXX.XXX.XXX-XX")
     private String cpf;
